@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="python tutorial" />
+    <title>Python Tutorial</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <nav id="navbar">
+      <header id="navbar-header">Python Tutorial</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#introduction">Introduction</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#getting_started">Getting Started</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#syntax">Syntax</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#comments">Comments</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#variables">Variables</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#references">References</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+        
+        <section class="main-section" id="introduction">
+            
+            <header>
+                <h1>Introduction</h1>
+            </header>
+            
+            <article>
+                <h2>What is Python?</h2>
+                    <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+                    <p>It is used for:</p>
+                    <ul>
+                        <li>web development (server-side),</li>
+                        <li>software development,</li>
+                        <li>mathematics,</li>
+                        <li>system scripting.</li>
+                    </ul>
+                <h3>What can Python do?</h3>
+                    <ul>
+                        <li>Python can be used on a server to create web applications.</li>
+                        <li>Python can be used alongside software to create workflows.</li>
+                        <li>Python can connect to database systems. It can also read and modify files.</li>
+                        <li>Python can be used to handle big data and perform complex mathematics.</li>
+                        <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+                    </ul>
+                <h3>Why Python?</h3>
+                    <ul>
+                        <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+                        <li>Python has a simple syntax similar to the English language.</li>
+                        <li>Python has syntax that allows developers to write programs with fewer lines than some other programming languages.</li>
+                        <li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.</li>
+                        <li>Python can be treated in a procedural way, an object-oriented way or a functional way.</li>
+                    </ul>
+                <h3>Good to know</h3>
+                    <ul>
+                        <li>The most recent major version of Python is Python 3, which we shall be using in this tutorial. However, Python 2, although not being updated with anything other than security updates, is still quite popular.</li>
+                        <li>In this tutorial Python will be written in a text editor. It is possible to write Python in an Integrated Development Environment, such as Thonny, Pycharm, Netbeans or Eclipse which are particularly useful when managing larger collections of Python files.</li>
+                    </ul>
+                <h3>Python Syntax compared to other programming languages</h3>
+                    <ul>
+                        <li>Python was designed for readability, and has some similarities to the English language with influence from mathematics.</li>
+                        <li>Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.</li>
+                        <li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.</li>
+                    </ul>
+                <div class="code-box">
+                    <span class="example">Example</span>
+                    <code class="code white-box">print("Hello, World!")</code>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="main-section" id="getting_started">
+
+            <header>
+                <h1>Getting Started</h1>
+            </header>
+            
+            <article>
+                <h3>Python Install</h3>
+                    <p>Many PCs and Macs will have python already installed.</p>
+                    <p>To check if you have python installed on a Windows PC, search in the start bar for Python or run the following on the Command Line (cmd.exe):</p>
+                    <div class="code-box">
+                        <code class="code black-box">C:\Users\Your Name>python --version</code>
+                    </div>
+                    <p>To check if you have python installed on a Linux or Mac, then on linux open the command line or on Mac open the Terminal and type:</p>
+                    <div class="code-box">
+                        <code class="code black-box">python --version</code>
+                    </div>
+                    <p>If you find that you do not have Python installed on your computer, then you can download it for free from the following website: <a href="https://www.python.org/">https://www.python.org/</a></p>
+                <h3>Python Quickstart</h3>
+                    <p>Python is an interpreted programming language, this means that as a developer you write Python (.py) files in a text editor and then put those files into the python interpreter to be executed.</p>
+                    <p>The way to run a python file is like this on the command line:</p>
+                    <div class="code-box">
+                        <code class="code black-box">C:\Users\Your Name>python helloworld.py</code>
+                    </div>
+                    <p>Where "helloworld.py" is the name of your python file.</p>
+                    <p>Let's write our first Python file, called helloworld.py, which can be done in any text editor.</p>
+                    <div class="code-box">
+                        <span class="sub-example">helloworld.py</span>
+                        <code class="code white-box">print("Hello, World!")</code>
+                    </div>
+                    <p>Simple as that. Save your file. Open your command line, navigate to the directory where you saved your file, and run:</p>
+                    <div class="code-box">
+                        <code class="code black-box">C:\Users\Your Name>python helloworld.py</code>
+                    </div>
+                    <p>The output should read:</p>
+                    <div class="code-box">
+                        <code class="code black-box">Hello, World!</code>
+                    </div>
+                    <p>Congratulations, you have written and executed your first Python program.</p>
+                <h3>The Python Command Line</h3>
+                    <p>To test a short amount of code in python sometimes it is quickest and easiest not to write the code in a file. This is made possible because Python can be run as a command line itself.</p>
+                    <p>Type the following on the Windows, Mac or Linux command line:</p>
+                    <div class="code-box">
+                        <code class="code black-box">C:\Users\Your Name>python</code>
+                    </div>
+                    <p>Or, if the "python" command did not work, you can try "py":</p>
+                    <div class="code-box">
+                        <code class="code black-box">C:\Users\Your Name>py</code>
+                    </div>
+                    <p>From there you can write any python, including our hello world example from earlier in the tutorial:</p>
+                    <div class="code-box">
+                        <code class="code black-box">
+                            <span class="gray-text">
+                                C:\Users\Your Name>python<br>
+                                Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32<br>
+                                Type "help", "copyright", "credits" or "license" for more information.<br>
+                            </span>
+                                >>> print("Hello, World!")
+                        </code>
+                    </div>
+                    <p>Which will write "Hello, World!" in the command line:</p>
+                    <div class="code-box">
+                        <code class="code black-box">
+                            <span class="gray-text">
+                                C:\Users\Your Name>python<br>
+                                Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32<br>
+                                Type "help", "copyright", "credits" or "license" for more information.<br>
+                                >>> print("Hello, World!")<br>
+                            </span>
+                                Hello, World!
+                        </code>
+                    </div>
+                    <p>Whenever you are done in the python command line, you can simply type the following to quit the python command line interface:</p>
+                    <div class="code-box">
+                        <code class="code black-box">exit()</code>
+                    </div>
+            </article>
+
+        </section>
+
+        <section class="main-section" id="syntax">
+
+            <header>
+                <h1>Syntax</h1>
+            </header>
+            
+            <article>
+                <h3>Execute Python Syntax</h3>
+                    <p>As we learned in the previous page, Python syntax can be executed by writing directly in the Command Line:</p>
+                    <div class="code-box">
+                        <code class="code black-box">
+                            >>> print("Hello, World!")<br>
+                            Hello, World!
+                        </code>
+                    </div>
+                    <p>Or by creating a python file on the server, using the .py file extension, and running it in the Command Line:</p>
+                    <div class="code-box">
+                        <code class="code black-box">C:\Users\Your Name>python myfile.py</code>
+                    </div>
+                <h3>Python Indentation</h3>
+                    <p>Indentation refers to the spaces at the beginning of a code line.</p>
+                    <p>Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.</p>
+                    <p>Python uses indentation to indicate a block of code.</p>
+                    <div class="code-box">
+                        <span class="example">Example</span>
+                        <code class="code white-box">
+                            if 5 > 2:<br>
+                            &nbsp;&nbsp;print("Five is greater than two!")
+                        </code>
+                    </div>
+                    <p>Python will give you an error if you skip the indentation:</p>
+                    <div class="code-box error-box">
+                        <span class="example error-example">Example</span>
+                        <code class="code white-box border-error">
+                            if 5 > 2:<br>
+                            print("Five is greater than two!")
+                        </code>
+                    </div>
+                    <p>The number of spaces is up to you as a programmer, the most common use is four, but it has to be at least one.</p>
+                    <div class="code-box">
+                        <span class="example">Example</span>
+                        <code class="code white-box">
+                            if 5 > 2:<br>
+                            &nbsp;print("Five is greater than two!")<br>
+                            if 5 > 2:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Five is greater than two!")
+                        </code>
+                    </div>
+                    <p>You have to use the same number of spaces in the same block of code, otherwise Python will give you an error:</p>
+                    <div class="code-box error-box">
+                        <span class="example error-example">Example</span>
+                        <code class="code white-box border-error">
+                            if 5 > 2:<br>
+                            &nbsp;print("Five is greater than two!")<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Five is greater than two!")
+                        </code>
+                    </div>
+                <h3>Python Variables</h3>
+                    <p>In Python, variables are created when you assign a value to it:</p>
+                    <div class="code-box">
+                        <span class="example">Example</span>
+                        <span class="sub-example">Variables in Python:</span>
+                        <code class="code white-box">
+                            x = 5<br>
+                            y = "Hello, World!"
+                        </code>
+                    </div>
+                    <p>Python has no command for declaring a variable.</p>
+                    <p>You will learn more about variables in the <a href="#variables">Python Variables chapter.</a></p>
+                <h3>Comments</h3>
+                    <p>Python has commenting capability for the purpose of in-code documentation.</p>
+                    <p>Comments start with a <span class="italic">#</span>, and Python will render the rest of the line as a comment:</p>
+                    <div class="code-box">
+                        <span class="example">Example</span>
+                        <span class="sub-example">Comments in Python:</span>
+                        <code class="code white-box">
+                            #This is a comment.<br>
+                            print("Hello, World!")
+                        </code>
+                    </div>
+            </article>
+
+        </section>
+
+        <section class="main-section" id="comments">
+
+            <header>
+                <h1>Comments</h1>
+            </header>
+            
+            <article>
+                    <p>Comments can be used to explain Python code.</p>
+                    <p>Comments can be used to make the code more readable.</p>
+                    <p>Comments can be used to prevent execution when testing code.</p>
+                <h3>Creating a Comment</h3>
+                    <p>Comments starts with a <code class="symbol">#</code>, and Python will ignore them:</p>
+                    <div class="code-box">
+                        <span class="example">Example</span>
+                        <code class="code white-box">
+                            #This is a comment<br>
+                            print("Hello, World!")
+                        </code>
+                    </div>
+                    <p>Comments can be placed at the end of a line, and Python will ignore the rest of the line:</p>
+                    <div class="code-box">
+                        <span class="example">Example</span>
+                        <code class="code white-box">
+                            print("Hello, World!") #This is a comment
+                        </code>
+                    </div>
+                    <p>A comment does not have to be text that explains the code, it can also be used to prevent Python from executing code:</p>
+                    <div class="code-box">
+                        <span class="example">Example</span>
+                        <code class="code white-box">
+                            #print("Hello, World!")<br>
+                            print("Cheers, Mate!")
+                        </code>
+                    </div>
+                <h3>Multi Line Comments</h3>
+                    <p>Python does not really have a syntax for multi line comments.</p>
+                    <p>To add a multiline comment you could insert a <code class="symbol">#</code> for each line:</p>
+                    <div class="code-box">
+                        <span class="example">Example</span>
+                        <code class="code white-box">
+                            #This is a comment<br>
+                            #written in<br>
+                            #more than just one line<br>
+                            print("Hello, World!")
+                        </code>
+                    </div>
+                    <p>Or, not quite as intended, you can use a multiline string.</p>
+                    <p>Since Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple quotes) in your code, and place your comment inside it:</p>
+                    <div class="code-box">
+                        <span class="example">Example</span>
+                        <code class="code white-box">
+                            """<br>
+                            This is a comment<br>
+                            written in<br>
+                            more than just one line<br>
+                            """<br>
+                            print("Hello, World!")
+                        </code>
+                    </div>
+                    <p>As long as the string is not assigned to a variable, Python will read the code, but then ignore it, and you have made a multiline comment.</p>                     
+            </article>
+
+        </section>
+
+        <section class="main-section" id="variables">
+
+            <header>
+                <h1>Variables</h1>
+            </header>
+            
+            <article>
+                    <p>Variables are containers for storing data values.</p>
+                <h3>Creating Variables</h3>
+                    <p>Python has no command for declaring a variable.</p>
+                    <p>A variable is created the moment you first assign a value to it.</p>
+                    <div class="code-box">
+                        <span class="example">Example</span>
+                        <code class="code white-box">
+                            x = 5<br>
+                            y = "John"<br>
+                            print(x)<br>
+                            print(y)
+                        </code>
+                    </div>
+                    <p>Variables do not need to be declared with any particular <span class="italic">type</span>, and can even change type after they have been set.</p>
+                    <div class="code-box">
+                        <span class="example">Example</span>
+                        <code class="code white-box">
+                            x = 4       # x is of type int<br>
+                            x = "Sally" # x is now of type str<br>
+                            print(x)
+                        </code>
+                    </div>
+                <h3>Casting</h3>
+                    <p>If you want to specify the data type of a variable, this can be done with casting.</p>
+                    <div class="code-box">
+                        <span class="example">Example</span>
+                        <code class="code white-box">
+                            x = str(3)    # x will be '3'<br>
+                            y = int(3)    # y will be 3<br>
+                            z = float(3)  # z will be 3.0
+                        </code>
+                    </div>
+                <h3>Get the Type</h3>
+                    <p>You can get the data type of a variable with the <code class="symbol">type()</code> function.</p>
+                    <div class="code-box">
+                        <span class="example">Example</span>
+                        <code class="code white-box">
+                            x = 5<br>
+                            y = "John"<br>
+                            print(type(x))<br>
+                            print(type(y))
+                        </code>
+                    </div>
+                <h3>Single or Double Quotes?</h3>
+                    <p>String variables can be declared either by using single or double quotes:</p>
+                    <div class="code-box">
+                        <span class="example">Example</span>
+                        <code class="code white-box">
+                            x = "John"<br>
+                            # is the same as<br>
+                            x = 'John'
+                        </code>
+                    </div>
+                <h3>Case-Sensitive</h3>
+                    <p>Variable names are case-sensitive.</p>
+                    <div class="code-box">
+                        <span class="example">Example</span>
+                        <span class="sub-example">This will create two variables:</span>
+                        <code class="code white-box">
+                            a = 4<br>
+                            A = "Sally"<br>
+                            #A will not overwrite a
+                        </code>
+                    </div>
+            </article>
+
+        </section>
+
+        
+        <section class="main-section" id="references">
+
+            <header>
+                <h1>References</h1>
+            </header>
+
+            <article>
+                <p>Full tutorial available on <a href="https://www.w3schools.com/python/default.asp">w3schools</a>.</p>
+            </article>
+
+        </section>
+
+    </main>
+
+  </body>
+</html>

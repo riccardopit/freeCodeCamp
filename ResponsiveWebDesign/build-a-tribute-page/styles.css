@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  #container{
+    background-color: #eeeeee;
+    margin: 30px 10px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  #title{
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  #title-description{
+    padding: 20px 0;
+    text-align: center;
+    font-style: italic;
+  }
+  
+  #img-div{
+  padding: 30px 0 20px 0;
+  background-color: white;
+  border-radius: 10px;
+  }
+  
+  #image{
+    display: block;
+    margin: auto;
+    width: 50%;
+    max-width: 100%;
+  }
+  
+  #img-caption{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 13px;
+  }
+  
+  #tribute-info{
+    text-align: center;
+  }
+  
+  #palmares{
+    text-align: center;
+  }
+  
+  #palmares ul{
+    display: inline-block;
+    list-style: inside;
+    text-align: left;
+  }
+  
+  #palmares ul li{
+    padding: 5px;
+  }
+  
+  .xtimes{
+    font-weight: bold;
+  }
+  
+  #tribute-info{
+    padding: 20px;
+  }
+  
+  #cit, #cit-author{
+    font-style: italic;
+  }
+  
+  #cit{
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  #cit-author{
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  
+  #tribute-description{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  #tribute-link{
+    text-decoration: none;
+    font-style: italic;
+  }

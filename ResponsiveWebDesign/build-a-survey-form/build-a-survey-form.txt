@@ -1,0 +1,171 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Basketball form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Basketball Player Form</h1>
+    <p id="description"><em>"Limits, like fears, are often just an illusion."</em></p>
+    <p id="author">Michael Jordan</p>
+    <form id="survey-form" action='https://basketball_team.org'>
+      <div class="info general">
+        <label id="name-label">Name<input id="name" type="text" name="name" placeholder="Insert your name" required /></label>
+        <label id="number-label">Age<input id="number" type="number" name="number" min="18" max="40" placeholder="Insert your age" required /></label>
+        <label id="email-label">Email<input id="email" type="email" name="email" placeholder="Insert your email" required /></label>
+      </div>
+      <div class="info status">
+        <p>Are you a professional or an amateur basketball player?</p>
+        <label class="inline"><input type="radio" name="player-status" value="amateur" required/>Amateur</label>
+        <label class="inline"><input type="radio" name="player-status" value="professional" />Professional</label>
+      </div>
+      <div class="info role">
+        <p>What is your main role?</p>
+          <select id="dropdown" name="player-role" required>
+            <option value="">(select one)</option>
+            <option value="playmaker">Playmaker</option>
+            <option value="guard">Guard</option>
+            <option value="small forward">Small forward</option>
+            <option value="power forward">Power forward</option>
+            <option value="center">Center</option>
+          </select>
+        </p>
+      </div>
+      <div class="info skill">
+        <p>What is your top skill?</p>
+        <label class="inline"><input type="checkbox" name="player-skill" value="shooting" />Shooting</label>
+        <label class="inline"><input type="checkbox" name="player-skill" value="dribbling" />Dribbling</label>
+        <label class="inline"><input type="checkbox" name="player-skill" value="passing" />Passing</label>
+        <label class="inline"><input type="checkbox" name="player-skill" value="rebounding" />Rebounding</label>
+        <label class="inline"><input type="checkbox" name="player-skill" value="defense" />Defense</label>
+      </div>
+      <div class="info personal">
+        <p>Provide a bio:</p>
+        <textarea id="bio" name="bio" rows="10" cols="10" placeholder="Tell something about your personality, attitudes, goals... "></textarea>
+      </div>
+      <input id="submit" type="submit" value="Submit form" />
+    </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://i0.wp.com/www.ryansfloors.com/wp-content/uploads/2016/06/iStock_99318947_XLARGE-e1478285539722.jpg?ssl=1");
+}
+
+#title, #description, #author{
+  margin: auto;
+  text-align: center;
+}
+
+#title{
+  margin: 20px 0 0 0;
+}
+
+#description{
+  padding: 20px 0 10px 0;
+}
+
+#author{
+  padding: 0 0 20 0;
+}
+
+#survey-form{
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+form{
+  width: 30vw;
+	max-width: 1000px;
+	min-width: 500px;
+	margin: auto;
+  padding: 20px;
+}
+
+.info{
+  border-bottom: 2px solid black;
+  padding: 20px 0;
+}
+
+.info:first-of-type{
+  padding-top: 0px;
+}
+
+.info:last-of-type{
+  border-bottom: 0px;
+}
+
+label{
+  display: block;
+}
+
+#dropdown{
+  width: 100%;
+}
+
+#bio{
+  width: 100%;
+}
+
+#name-label, #number-label, #email-label, form p{
+  padding-bottom: 10px;
+}
+
+#name, #number, #email{
+  width: 100%;
+  margin: 5px 0;
+}
+
+.inline{
+  padding-bottom: 5px;
+}
+
+.inline input{
+  margin-right: 5px;
+}
+
+#name, #number, #email, #dropdown, #bio{
+  padding: 10px;
+  border: 2px solid ;
+  border-radius: 10px;
+}
+
+#submit{
+  display: block;
+  margin: auto;
+  width: 60%;
+  height: 50px;
+  min-width: 300px;
+  background-color: white;
+  border-color: black;
+  border-radius: 10px;
+}
+
+#submit:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white
+}
+
+
+
+
+
+
+** end of undefined **
+

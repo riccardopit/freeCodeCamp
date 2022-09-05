@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  #navbar{
+    position: fixed;
+    height: 100vh;
+    width: 25vw;
+    border-right: 2px solid gray;
+  }
+  
+  #navbar-header{
+    padding: 20px 20px;
+    text-align: center;
+    font-size: 30px;
+    color: #4d4e53;
+    font-weight: bold;
+  }
+  
+  #navbar ul li{
+    border-top: 1px solid gray;
+    padding: 10px 20px;
+    text-align: left;
+  }
+  
+  #navbar ul li:last-child {
+    border-bottom: 1px solid gray;
+  }
+  
+  #navbar ul li a{
+    text-decoration: none;
+    color: #4d4e53;
+  }
+  
+  #navbar ul li a:hover{
+    color: black;
+  }
+  
+  #main-doc{
+    margin: 2vh 2vw 5vh 27vw;
+    position: absolute;
+  }
+  
+  .main-section header{
+    color: #4d4e53;
+    padding: 20px 0;
+  }
+  
+  .main-section article{
+    color: #4d4e53;
+    padding-left: 20px;
+  }
+  
+  .main-section{
+    padding-bottom: 30px; 
+  }
+  
+  .main-section article ul{
+    list-style-position: outside;
+    list-style-type: disc;
+    margin-left: 2em;
+  }
+  
+  .main-section article p{
+    padding: 5px 0; 
+  }
+  
+  .main-section h1{
+    font-size: 30px;
+  }
+  
+  .main-section h2{
+    font-size: 25px;
+  }
+  
+  .main-section h3{
+    font-size: 20px;
+  }
+  
+  .main-section h2, .main-section h3{
+    padding: 30px 0 10px 0;
+  }
+  
+  .code-box{
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+  
+  .error-box{
+    background-color: #4d4e53;
+  }
+  
+  .example{
+    padding-bottom: 10px;
+    font-size: 20px;
+    display: block;
+  }
+  
+  .error-example{
+    color: white;
+  }
+  
+  .sub-example{
+    padding-bottom: 5px;
+    display: block;
+  }
+  
+  .code{
+    font-family: monospace;
+    display: block;
+    padding: 10px;
+    border-left: 4px solid #4d4e53;
+  }
+  
+  .white-box{
+    background-color: white;
+  }
+  
+  .black-box{
+    background-color: black;
+    color: white;
+  }
+  
+  .gray-text{
+    color: gray;
+    font-family: monospace;
+  }
+  
+  .border-error{
+    border-left: 4px solid black;
+  }
+  
+  .symbol{
+    background-color: #f7f7f7;;
+    font-family: monospace;
+    padding: 0 3px;
+  }
+  
+  .italic{
+    font-style: italic;
+  }
+  
+  article a{
+    color: #4d4e53;
+  }
+  
+  article a:hover{
+    color: black;
+  }
+  
+  @media only screen and (max-width: 800px) {
+  
+    #navbar {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      border: none;
+    }
+  
+    #navbar ul li{
+      text-align: center;
+    }
+  
+    #main-doc {
+      position: absolute;
+      margin: 350px 2vw 0;
+    }
+  
+  }

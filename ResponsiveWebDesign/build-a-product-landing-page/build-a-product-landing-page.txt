@@ -1,0 +1,380 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Lion Mouthguards" />
+    <title>Lion Mouthguards</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css"/>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+
+    <header id="header">
+
+      <div id="header-logo">
+        <img id="header-img" src="https://www.pngkey.com/png/full/1-17803_lion-logo-png-graphic-royalty-free-stock-lion.png" alt="logo"/>
+        <span id="header-name">Lion Mouthguards</span>
+      </div>
+      
+      <nav id="nav-bar">
+        <ul>
+          <li>
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#teaser">Teaser</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#products">Products</a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <div id="container">
+      
+      <main>
+
+        <section id="form-container">
+          <h2>Our history is our guarantee</h2>
+          <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input id="email" type="email" name="email" placeholder="Enter your email address" required>
+            <input id="submit" type="submit" value="Get Info">
+          </form>
+        </section>
+
+        <section id="features">
+    
+          <div class="feature">
+            <i class="fa-solid fa-face-smile"></i>
+            <h2>Satisfation</h2>
+            <p>Satisfy the customer is the most important thing.</p>
+          </div>
+
+          <div class="feature">
+            <i class="fa-solid fa-heart"></i>
+            <h2>Passion</h2>
+            <p>The results we get are fruits of our passion.</p>
+          </div>
+
+          <div class="feature">
+            <i class="fa-solid fa-star"></i>
+            <h2>Quality</h2>
+            <p>We sell product of excellent quality.</p>
+          </div>
+
+          <div class="feature">
+            <i class="fa-solid fa-lightbulb"></i>
+            <h2>Innovation</h2>
+            <p>We study every day new innovations for our products.</p>
+          </div>
+
+          <div class="feature">
+            <i class="fa-solid fa-users"></i>
+            <h2>Relations</h2>
+            <p>Transparency, trust and loyalty are at the base of the relations with our customers.</p>
+          </div>
+
+        </section>
+
+        <section id="teaser">
+          <iframe id="video" src="https://www.youtube.com/embed/8uEa8XiUc6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <section id="products">
+
+          <div class="product">
+            <h2>Safe Guard</h2>
+            <span class="price">$10</span>
+            <img src="https://www.leone1947.com/cache/media/2022/07/pd512_01_1_1210.jpg/54b56f0b0102b214cb660b9456b52265.jpg" alt="mouthguard_1">
+            <button type="button">Buy</button>
+          </div>
+
+          <div class="product">
+            <h2>Breath Guard</h2>
+            <span class="price">$12</span>
+            <img src="https://www.leone1947.com/cache/media/2022/07/pd514_01_1_1224.jpg/5200e2dc59526113d1d75bdf781b3f85.jpg" alt="mouthguard_2">
+            <button type="button">Buy</button>
+          </div>
+
+          <div class="product">
+            <h2>Double</h2>
+            <span class="price">$15</span>
+            <img src="https://www.leone1947.com/cache/media/2022/07/pd515_01_1_1226.jpg/3f64eb17c982334793f145fe8840d3f3.jpg" alt="mouthguard_3">
+            <button type="button">Buy</button>
+          </div>
+
+        </section>
+        
+      </main>
+
+      <footer>
+        <p>Copyright 2022, Lion Mouthguards</p>
+      </footer>
+
+    </div>
+
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+:root{
+  --main-color: #f2f2f2;
+  --second-color: #ddd;
+  --third-color: orange;
+  --border-radius: 5px;
+}
+
+html{
+  scroll-padding-top: 8vh;
+}
+
+#header{
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-color);
+}
+
+#header-logo{
+  display: flex;
+  align-items: center;
+  height: 8vh;
+  margin-left: 30px;
+}
+
+#header-img{
+  height: 50px;
+  margin: 10px;
+}
+
+#header-name{
+  font-family: Brush Script MT;
+  font-size: 40px;
+}
+
+#nav-bar ul{
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#nav-bar ul li{
+  list-style: none;
+}
+
+#nav-bar ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+#form-container{
+  font-style: italic;
+  text-align: center;
+  padding: 50px 0;
+}
+
+#form-container h2{
+  padding: 20px 0;
+}
+
+#email{
+  height: 40px;
+  width: 30vw;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: var(--border-radius);
+  border-color: black;
+}
+
+#submit{
+  display: block;
+  text-align: center;
+  margin: auto;
+  width: 70px;
+  height: 40px;
+  background-color: var(--third-color);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+#container{
+  background-color: var(--main-color)
+}
+
+main{
+  margin-top: 8vh;
+}
+
+#features{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.feature{
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+}
+
+.feature i{
+  font-size: 50px;
+  color: orange;
+}
+
+.feature h2{
+  padding: 10px 0;
+}
+
+#teaser{
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+#video{
+  width: 70%;
+  height: 700px;
+}
+
+#products{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 50px;
+}
+
+.product{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: var(--border-radius);
+  width: calc(100% / 6);
+  background-color: var(--second-color);
+}
+
+.product h2{
+  padding: 10px 0;
+  font-style: italic;
+  text-align: center;
+}
+
+.product img{
+  width: 100%;
+}
+
+.product .price{
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.product button{
+  margin: 10px 0;
+  width: 70px;
+  height: 40px;
+  background-color: var(--third-color);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+footer{
+  background-color: var(--second-color);
+  width: 80vw;
+  height: 15vh;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #444;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+
+  #nav-bar{
+    display: none;
+  }
+
+  #header-logo{
+    margin: auto
+  }
+
+  #form-container{
+    padding: 20px 0;
+  }
+
+  #email{
+    width: 70vw;
+  }
+
+  #features{
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .feature{
+    width: 80vw;
+    padding: 50px 0;
+  }
+
+  #teaser{
+    display: none;
+  }
+
+  #products{
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 0;
+  }
+
+  .product{
+    width: 80vw;
+    margin: 50px 0;
+  }
+
+  footer{
+    justify-content: center;
+    text-align: center;
+  }
+
+}
+
+@media only screen and (max-width: 350px){
+
+  #header-name{
+    display: none;
+  }
+
+}
+
+** end of undefined **
+

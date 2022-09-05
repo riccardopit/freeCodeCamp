@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Basketball form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Basketball Player Form</h1>
+    <p id="description"><em>"Limits, like fears, are often just an illusion."</em></p>
+    <p id="author">Michael Jordan</p>
+    <form id="survey-form" action='https://basketball_team.org'>
+      <div class="info general">
+        <label id="name-label">Name<input id="name" type="text" name="name" placeholder="Insert your name" required /></label>
+        <label id="number-label">Age<input id="number" type="number" name="number" min="18" max="40" placeholder="Insert your age" required /></label>
+        <label id="email-label">Email<input id="email" type="email" name="email" placeholder="Insert your email" required /></label>
+      </div>
+      <div class="info status">
+        <p>Are you a professional or an amateur basketball player?</p>
+        <label class="inline"><input type="radio" name="player-status" value="amateur" required/>Amateur</label>
+        <label class="inline"><input type="radio" name="player-status" value="professional" />Professional</label>
+      </div>
+      <div class="info role">
+        <p>What is your main role?</p>
+          <select id="dropdown" name="player-role" required>
+            <option value="">(select one)</option>
+            <option value="playmaker">Playmaker</option>
+            <option value="guard">Guard</option>
+            <option value="small forward">Small forward</option>
+            <option value="power forward">Power forward</option>
+            <option value="center">Center</option>
+          </select>
+        </p>
+      </div>
+      <div class="info skill">
+        <p>What is your top skill?</p>
+        <label class="inline"><input type="checkbox" name="player-skill" value="shooting" />Shooting</label>
+        <label class="inline"><input type="checkbox" name="player-skill" value="dribbling" />Dribbling</label>
+        <label class="inline"><input type="checkbox" name="player-skill" value="passing" />Passing</label>
+        <label class="inline"><input type="checkbox" name="player-skill" value="rebounding" />Rebounding</label>
+        <label class="inline"><input type="checkbox" name="player-skill" value="defense" />Defense</label>
+      </div>
+      <div class="info personal">
+        <p>Provide a bio:</p>
+        <textarea id="bio" name="bio" rows="10" cols="10" placeholder="Tell something about your personality, attitudes, goals... "></textarea>
+      </div>
+      <input id="submit" type="submit" value="Submit form" />
+    </form>
+  </body>
+</html>
