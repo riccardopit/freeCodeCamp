@@ -58,9 +58,6 @@
 
   </body>
 </html>
-  
-  
-
 
 ** end of undefined **
 
@@ -160,10 +157,6 @@ border-radius: 10px;
   text-decoration: none;
   font-style: italic;
 }
-
-
-
-
 
 ** end of undefined **
 

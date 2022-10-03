@@ -16,7 +16,7 @@
     <header id="header">
 
       <div id="header-logo">
-        <img id="header-img" src="https://www.pngkey.com/png/full/1-17803_lion-logo-png-graphic-royalty-free-stock-lion.png" alt="logo"/>
+        <img id="header-img" src="https://www.pngkey.com/png/full/1-17803_lion-logo-png-graphic-royalty-free-stock-lion.png" alt="logo">
         <span id="header-name">Lion Mouthguards</span>
       </div>
       
@@ -141,11 +141,12 @@
 }
 
 html{
-  scroll-padding-top: 8vh;
+  scroll-padding-top: 12vh;
 }
 
 #header{
   position: fixed;
+  height: 12vh;
   width: 100vw;
   top: 0;
   display: flex;
@@ -158,12 +159,11 @@ html{
 #header-logo{
   display: flex;
   align-items: center;
-  height: 8vh;
   margin-left: 30px;
 }
 
 #header-img{
-  height: 50px;
+  width: 50px;
   margin: 10px;
 }
 
