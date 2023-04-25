@@ -1,0 +1,1 @@
+Videos, course materials, exercises, quiz and forum discussions are here: https://www.py4e.com/
