@@ -1,0 +1,1 @@
+Projects can be run also on Replit: https://replit.com/@riccardopit?path=folder/freeCodeCamp/ScientificComputingWithPython
