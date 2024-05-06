@@ -13,7 +13,7 @@ echo $($PSQL "TRUNCATE games, teams;")
 
 cat games.csv | while IFS="," read YEAR ROUND WINNER OPPONENT WINNER_GOALS OPPONENT_GOALS
 do
-  if [[ $YEAR != "year" ]]
+  if [[ $YEAR != "year" ]]  # jump the first line
   then
     # get winner_id
     WINNER_ID=$($PSQL "SELECT team_id FROM teams WHERE name='$WINNER'")
